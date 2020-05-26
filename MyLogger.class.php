@@ -9,7 +9,7 @@ class MyLogger
 		if ($origin == "" || $origin == null) 
 		{
 			die("[ERROR] Logger constructor needs origin!");
-		}
+		} 
 		$this -> origin = $origin;
 	}
 	
