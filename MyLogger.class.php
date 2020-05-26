@@ -7,7 +7,9 @@ class MyLogger
 	public function __contruct($origin = "")
 	{
 		if ($origin == "" || $origin == null)
+		{
 			die("[ERROR] Logger constructor needs origin!");
+		}
 		$this -> origin = $origin;
 	}
 	
