@@ -4,6 +4,13 @@ class MyLogger
 {
 	private $origin;
 	
+	public function __contruct($origin = "")
+	{
+		if ($origin == "" || $origin == null)
+			die("[ERROR] Logger constructor needs origin!");
+		$this -> origin = $origin;
+	}
+	
 	private function logWithTime()
 	{
 		echo "[" . date('Y-m-d H:i:s') . "] ";
